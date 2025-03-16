@@ -16,7 +16,7 @@ dotenv.config(); // Load environment variables from .env file
 const uri = process.env.MONGODB_URL; // Get MongoDB connection string from environment variables
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000
 
 app.use(cors());
 app.use(express.json());
