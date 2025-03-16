@@ -107,7 +107,7 @@ try {
           <div></div>
           <div className='flex flex-col gap-2 justify-end text-sm text-center'>
           {!item.cancelled && item.payment && <button  className='sm:minw-48 py-2 border rounded text-stone-500 bg-green-500'>Paid</button>}
-          {!item.cancelled && item.payment &&  <button onClick={()=>appointmentRazorpay(item._id)} className='text-[#696969] sm:min-w-48 py-2 border rounded hover:bg-primary hover:text-white transition-all duration-300'>Pay online</button>}
+          {!item.cancelled && !item.payment &&  <button onClick={()=>appointmentRazorpay(item._id)} className='text-[#696969] sm:min-w-48 py-2 border rounded hover:bg-primary hover:text-white transition-all duration-300'>Pay online</button>}
            {!item.cancelled && <button onClick={()=>cancelAppointment(item._id)} className='text-[#696969] sm:min-w-48 py-2 border rounded hover:bg-red-600 hover:text-white transition-all duration-300'>Cancel appointment</button>}
            {item.cancelled && <button className='sm:min-w-48 py-2 border border-red-500 rounded text-red-500'>Appointment cancelled</button>}
           </div>
