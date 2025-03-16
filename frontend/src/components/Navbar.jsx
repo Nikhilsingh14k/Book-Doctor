@@ -34,6 +34,9 @@ const Navbar = () => {
             <li className='py-1'>Contact</li>
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
+        <a href="https://admin-plz7.onrender.com" target="_blank" rel="noopener noreferrer">
+    <button className="py-2 px-4 bg-primary text-white rounded">Admin Panel</button>
+      </a>  
       </ul>
     <div className='flex items-center gap-4'>
        { token && userData?<div className='flex items-center gap-2 cursor-pointer group relative'>
