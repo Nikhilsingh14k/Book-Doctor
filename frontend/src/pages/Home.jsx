@@ -4,7 +4,12 @@ import SpecialityMenu from '../components/SpecialityMenu'
 import TopDoctors from '../components/TopDoctors'
 import Banner from '../components/Banner'
 
+
 const Home = () => {
+    useEffect(() => {
+    fetch("https://bookdoctor.onrender.com").catch(error => console.error("API call failed", error));
+}, []);
+
   return (
     <div>
       <Header/>
